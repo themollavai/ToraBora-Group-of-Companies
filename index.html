@@ -1,120 +1,126 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>ToraBora Group of Companies</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ToraBora Group of Companies</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            font-family: Arial;
-            margin: 0;
-        }
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+}
 
-        header {
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-                        url('FB_IMG_1776078381836.jpg');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            padding: 100px 20px;
-            text-align: center;
-        }
+/* Header with Background Image */
+header {
+  background: url('file_00000000af9c7208b527c9c451619946.png') no-repeat center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
 
-        nav {
-            background: #333;
-            padding: 10px;
-            text-align: center;
-        }
+/* Overlay for dark effect */
+header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  background: rgba(0,0,0,0.5);
+}
 
-        nav a {
-            color: white;
-            margin: 10px;
-            text-decoration: none;
-        }
+/* Text above overlay */
+.header-content {
+  position: relative;
+  z-index: 1;
+}
 
-        section {
-            padding: 20px;
-        }
+nav {
+  background: #333;
+  padding: 10px;
+  text-align: center;
+}
 
-        .box {
-            background: #f1f1f1;
-            padding: 15px;
-            margin: 10px 0;
-            border-radius: 10px;
-        }
+nav a {
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-        footer {
-            background: black;
-            color: white;
-            text-align: center;
-            padding: 15px;
-        }
+section {
+  padding: 20px;
+}
 
-        .btn {
-            display: inline-block;
-            background: green;
-            color: white;
-            padding: 10px 20px;
-            margin-top: 10px;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-    </style>
+.card {
+  background: #eee;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 15px;
+  background: green;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+</style>
 </head>
 
 <body>
 
 <header>
+  <div class="header-content">
     <h1>ToraBora Group of Companies</h1>
     <p>Crafting a New Ecosystem</p>
+  </div>
 </header>
 
 <nav>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Contact</a>
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Contact</a>
 </nav>
 
 <section>
-    <h2>About Us</h2>
-    <p>
-        We are a corporate group working in clothing, accessories and Deen-based initiatives.
-        Our mission is to build a strong ecosystem that supports business, community, and the establishment of Deen.
-    </p>
+  <h2>About Us</h2>
+  <p>
+  We are a corporate group working in clothing, accessories and Deen-based initiatives.
+  Our mission is to build a strong ecosystem that supports business, community, and the establishment of Deen.
+  </p>
+
+  <h2>Our Services</h2>
+
+  <div class="card">
+    <h3>Clothing</h3>
+    <p>Modern Islamic clothing solutions.</p>
+  </div>
+
+  <div class="card">
+    <h3>Accessories</h3>
+    <p>Quality accessories for everyday use.</p>
+  </div>
+
+  <div class="card">
+    <h3>Deen Fund</h3>
+    <p>This fund supports the establishment of Deen and Islamic initiatives.</p>
+  </div>
+
+  <h2>Contact</h2>
+
+  <p>Email: themollavai@gmail.com</p>
+
+  <a class="btn" href="https://wa.me/8801615778776">
+    Contact on WhatsApp
+  </a>
+
 </section>
-
-<section>
-    <h2>Our Services</h2>
-
-    <div class="box">
-        <h3>ToraBora Clothing</h3>
-        <p>Premium fashion and lifestyle products.</p>
-    </div>
-
-    <div class="box">
-        <h3>ToraBora Accessories</h3>
-        <p>High quality accessories for modern lifestyle.</p>
-    </div>
-
-    <div class="box">
-        <h3>Deen Establishment Fund</h3>
-        <p>This fund is dedicated to the establishment of Deen, supporting charitable, educational, and community initiatives for the sake of Allah.</p>
-    </div>
-
-</section>
-
-<section>
-    <h2>Contact Us</h2>
-    <p>Email: themollavai@gmail.com</p>
-    <p>WhatsApp: +8801615778776</p>
-
-    <a class="btn" href="https://wa.me/8801615778776">Chat on WhatsApp</a>
-</section>
-
-<footer>
-    <p>© 2026 ToraBora Group of Companies</p>
-</footer>
 
 </body>
 </html>
