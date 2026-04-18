@@ -7,79 +7,104 @@
 <style>
 body {
   margin: 0;
-  font-family: Arial;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f7fa;
 }
 
-/* HEADER WITH BACKGROUND IMAGE */
+/* HEADER */
 header {
-  background: url('file_00000000af9c7208b527c9c451619946.png') no-repeat center;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('file_00000000af9c7208b527c9c451619946.png');
   background-size: cover;
   color: white;
   text-align: center;
   padding: 120px 20px;
-  position: relative;
 }
 
-/* Dark overlay */
-header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.6);
+header h1 {
+  font-size: 40px;
 }
 
-/* Text above overlay */
-.header-content {
-  position: relative;
-  z-index: 1;
+header p {
+  font-size: 18px;
 }
 
+/* NAV */
 nav {
-  background: #222;
+  background: #111;
   padding: 12px;
   text-align: center;
 }
 
 nav a {
   color: white;
-  margin: 10px;
+  margin: 15px;
   text-decoration: none;
   font-weight: bold;
 }
 
+/* SECTION */
 section {
-  padding: 20px;
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
 }
 
+/* CARD */
 .card {
-  background: #eee;
-  padding: 15px;
-  margin: 10px 0;
+  background: white;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* GALLERY */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.gallery img {
+  width: 100%;
   border-radius: 10px;
 }
 
-/* Buttons */
+/* BUTTON */
 .btn {
   display: inline-block;
-  padding: 10px 15px;
+  padding: 12px 18px;
   margin: 5px;
   color: white;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 6px;
+  font-weight: bold;
 }
 
-.whatsapp { background: green; }
+.whatsapp { background: #25D366; }
 .facebook { background: #1877f2; }
 .instagram { background: #e1306c; }
 
+/* FLOATING WHATSAPP */
+.float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* FOOTER */
 footer {
   background: #111;
   color: white;
   text-align: center;
-  padding: 15px;
+  padding: 20px;
 }
 </style>
 </head>
@@ -87,55 +112,68 @@ footer {
 <body>
 
 <header>
-  <div class="header-content">
-    <h1>ToraBora Group of Companies</h1>
-    <p>Crafting a New Ecosystem</p>
-  </div>
+  <h1>ToraBora Group of Companies</h1>
+  <p>Crafting a New Ecosystem</p>
 </header>
 
 <nav>
   <a href="#">Home</a>
-  <a href="#">About</a>
   <a href="#">Services</a>
+  <a href="#">Gallery</a>
   <a href="#">Contact</a>
 </nav>
 
 <section>
   <h2>About Us</h2>
   <p>
-  We are a corporate group working in clothing, accessories and Deen-based initiatives.
-  Our mission is to build a strong ecosystem that supports business, community, and the establishment of Deen.
+  We are a global corporate group working in clothing, accessories, and Deen-based initiatives.
+  Our mission is to create a powerful ecosystem combining business excellence with ethical values.
   </p>
+</section>
 
+<section>
   <h2>Our Services</h2>
 
   <div class="card">
     <h3>Clothing</h3>
-    <p>Modern Islamic clothing solutions.</p>
+    <p>Modern and Islamic fashion solutions.</p>
   </div>
 
   <div class="card">
     <h3>Accessories</h3>
-    <p>Quality accessories for everyday use.</p>
+    <p>Premium lifestyle accessories.</p>
   </div>
 
   <div class="card">
     <h3>Deen Fund</h3>
-    <p>This fund supports the establishment of Deen and Islamic initiatives.</p>
+    <p>Supporting Islamic education and community development.</p>
   </div>
 
+</section>
+
+<section>
+  <h2>Gallery</h2>
+
+  <div class="gallery">
+    <img src="file_00000000af9c7208b527c9c451619946.png">
+    <img src="file_00000000af9c7208b527c9c451619946.png">
+    <img src="file_00000000af9c7208b527c9c451619946.png">
+  </div>
+
+</section>
+
+<section>
   <h2>Contact</h2>
 
   <p>Email: themollavai@gmail.com</p>
 
-  <!-- Buttons -->
   <a class="btn whatsapp" href="https://wa.me/8801615778776">WhatsApp</a>
-
   <a class="btn facebook" href="https://www.facebook.com/share/1ChZdEUtRA/">Facebook</a>
-
   <a class="btn instagram" href="https://www.instagram.com/_tora_bora_?igsh=MTl5NGRpaWl4N3dh">Instagram</a>
 
 </section>
+
+<a href="https://wa.me/8801615778776" class="float">💬</a>
 
 <footer>
   <p>© 2026 ToraBora Group of Companies</p>
