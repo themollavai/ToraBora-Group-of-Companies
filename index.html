@@ -8,21 +8,22 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: #f5f7fa;
+  background: #f4f6f9;
 }
 
 /* HEADER */
 header {
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+  background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
               url('file_00000000af9c7208b527c9c451619946.png');
   background-size: cover;
+  background-position: center;
   color: white;
   text-align: center;
   padding: 120px 20px;
 }
 
 header h1 {
-  font-size: 40px;
+  font-size: 42px;
 }
 
 header p {
@@ -32,7 +33,7 @@ header p {
 /* NAV */
 nav {
   background: #111;
-  padding: 12px;
+  padding: 14px;
   text-align: center;
 }
 
@@ -45,37 +46,25 @@ nav a {
 
 /* SECTION */
 section {
-  padding: 40px 20px;
   max-width: 1000px;
   margin: auto;
+  padding: 40px 20px;
 }
 
 /* CARD */
 .card {
   background: white;
-  padding: 20px;
-  margin: 15px 0;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-/* GALLERY */
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 10px;
-}
-
-.gallery img {
-  width: 100%;
-  border-radius: 10px;
+  padding: 25px;
+  margin: 20px 0;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
 
 /* BUTTON */
 .btn {
   display: inline-block;
   padding: 12px 18px;
-  margin: 5px;
+  margin: 6px;
   color: white;
   text-decoration: none;
   border-radius: 6px;
@@ -86,7 +75,7 @@ section {
 .facebook { background: #1877f2; }
 .instagram { background: #e1306c; }
 
-/* FLOATING WHATSAPP */
+/* FLOAT BUTTON */
 .float {
   position: fixed;
   bottom: 20px;
@@ -118,16 +107,15 @@ footer {
 
 <nav>
   <a href="#">Home</a>
+  <a href="#">About</a>
   <a href="#">Services</a>
-  <a href="#">Gallery</a>
   <a href="#">Contact</a>
 </nav>
 
 <section>
   <h2>About Us</h2>
   <p>
-  We are a global corporate group working in clothing, accessories, and Deen-based initiatives.
-  Our mission is to create a powerful ecosystem combining business excellence with ethical values.
+  ToraBora Group of Companies is a dynamic and forward-thinking corporate entity dedicated to building a powerful and sustainable ecosystem across multiple sectors. Our operations span clothing, accessories, and Deen-based initiatives, where we combine innovation with ethical values to create meaningful impact. We are committed to excellence, quality, and long-term growth, ensuring that our services not only meet modern standards but also align with our vision of contributing to society in a responsible and purposeful way.
   </p>
 </section>
 
@@ -135,29 +123,24 @@ footer {
   <h2>Our Services</h2>
 
   <div class="card">
-    <h3>Clothing</h3>
-    <p>Modern and Islamic fashion solutions.</p>
+    <h3>ToraBora Clothing</h3>
+    <p>
+    Our clothing division focuses on delivering premium quality fashion that blends modern trends with modest and Islamic values. We aim to provide stylish, comfortable, and high-standard apparel that reflects both identity and professionalism, ensuring satisfaction for customers seeking elegance and purpose in their lifestyle.
+    </p>
   </div>
 
   <div class="card">
-    <h3>Accessories</h3>
-    <p>Premium lifestyle accessories.</p>
+    <h3>ToraBora Accessories</h3>
+    <p>
+    Our accessories line is designed to complement everyday life with high-quality, durable, and aesthetically pleasing products. From personal essentials to lifestyle enhancements, we prioritize quality, design, and usability, offering solutions that align with modern needs and expectations.
+    </p>
   </div>
 
   <div class="card">
-    <h3>Deen Fund</h3>
-    <p>Supporting Islamic education and community development.</p>
-  </div>
-
-</section>
-
-<section>
-  <h2>Gallery</h2>
-
-  <div class="gallery">
-    <img src="file_00000000af9c7208b527c9c451619946.png">
-    <img src="file_00000000af9c7208b527c9c451619946.png">
-    <img src="file_00000000af9c7208b527c9c451619946.png">
+    <h3>Deen Establishment Fund</h3>
+    <p>
+    The Deen Establishment Fund is a dedicated initiative aimed at supporting the establishment and strengthening of Islamic values within society. This includes funding educational programs, community development, and charitable projects that contribute to the growth of Deen. Our intention is to create lasting impact through sincere efforts for the sake of Allah.
+    </p>
   </div>
 
 </section>
